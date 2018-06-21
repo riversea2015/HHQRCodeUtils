@@ -36,7 +36,7 @@ This is a QRCode tool collection, include generating and detecting.
   #   'HHQRCodeUtils' => ['HHQRCodeUtils/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/HHQRCodeUtils.h'
+  s.public_header_files = 'HHQRCodeUtils/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
