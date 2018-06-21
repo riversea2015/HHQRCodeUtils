@@ -1,6 +1,6 @@
 //
 //  HHQRImageGenerator.m
-//  Demo_All
+//  HHQRCodeUtils
 //
 //  Created by hehai on 26/07/2017.
 //  Copyright © 2017 hehai. All rights reserved.
