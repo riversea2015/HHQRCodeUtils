@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod 'HHQRCodeUtils'
 ```
 
+## Use
+
+Include HHQRCodeUtils wherever you need it with the following line:
+
+```ruby
+#import <HHQRCodeUtils/HHQRCodeUtils.h>
+```
+
 ## Author
 
 riversea2015, hehai682@126.com
