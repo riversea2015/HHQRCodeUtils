@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HHQRCodeUtils_Example' do
+  pod 'HHQRCodeUtils', :path => '../'
+
+  target 'HHQRCodeUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

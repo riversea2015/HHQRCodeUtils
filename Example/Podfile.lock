@@ -1,0 +1,16 @@
+PODS:
+  - HHQRCodeUtils (0.1.0)
+
+DEPENDENCIES:
+  - HHQRCodeUtils (from `../`)
+
+EXTERNAL SOURCES:
+  HHQRCodeUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHQRCodeUtils: 5c24cf09fc4dd96b3cce9817a24c28d466bc3dae
+
+PODFILE CHECKSUM: 30ef9b28ef734074bfa2aef5cff750c9ceb01f34
+
+COCOAPODS: 1.5.0
