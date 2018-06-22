@@ -10,5 +10,6 @@
 #define HHQRCodeUtils_h
 
 #import "HHQRImageGenerator.h"
+#import "HHQRCodeScanVC.h"
 
 #endif /* HHQRCodeUtils_h */

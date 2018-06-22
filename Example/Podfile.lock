@@ -1,5 +1,5 @@
 PODS:
-  - HHQRCodeUtils (0.1.0)
+  - HHQRCodeUtils (0.0.3)
 
 DEPENDENCIES:
   - HHQRCodeUtils (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HHQRCodeUtils: 5c24cf09fc4dd96b3cce9817a24c28d466bc3dae
+  HHQRCodeUtils: c91a12776f537eac47de7cc7bd12b438e0b790c4
 
 PODFILE CHECKSUM: 30ef9b28ef734074bfa2aef5cff750c9ceb01f34
 
