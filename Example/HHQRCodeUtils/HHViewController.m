@@ -77,6 +77,7 @@
             break;
         case 2018062203:
             {
+                _resultLab.text = nil;
                 _qrImgv.image = [HHQRImageGenerator createQRImageWithContents:@"https://github.com/riversea2015"
                                                                        qrSize:CGSizeMake(268, 268)
                                                                       bgImage:nil
@@ -87,6 +88,7 @@
             break;
         case 2018062204:
             {
+                _resultLab.text = nil;
                 _qrImgv.image = [HHQRImageGenerator createQRImgWithContents:@"http://weibo.com/riversea2015"
                                                                      qrSize:CGSizeMake(268, 268)
                                                                     bgImage:nil
@@ -98,7 +100,7 @@
             break;
         case 2018062205:
             {
-                self.resultLab.text = [HHQRImageGenerator detectQRImage:_qrImgv.image];
+                _resultLab.text = [HHQRImageGenerator detectQRImage:_qrImgv.image];
             }
             break;
             

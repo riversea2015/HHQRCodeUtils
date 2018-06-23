@@ -29,7 +29,7 @@
         self.backgroundColor = [UIColor clearColor];
 
         _scanLine  = [[UIImageView alloc] init];
-        _scanLine.image = [UIImage imageNamed:@"line"];
+        _scanLine.image = [UIImage imageNamed:@"QRCodeScanLine"];
         [self addSubview:_scanLine];
         
     }
