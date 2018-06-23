@@ -72,14 +72,12 @@
         case 2018062201:
         {
             NSLog(@"暂未实现");
-            return;
 //            [self.navigationController pushViewController:qrVC animated:YES];
         }
             break;
         case 2018062202:
         {
             NSLog(@"暂未实现");
-            return;
 //            [self presentViewController:qrVC animated:YES completion:nil];
         }
             break;
