@@ -10,15 +10,6 @@
 
 typedef void(^HHScanSuccessBlock)(NSString *resultStr);
 
-@interface HHShadowView : UIView
-
-@property (nonatomic, assign) CGSize showSize;
-
-- (void)stopTimer;
-
-@end
-
-
 @interface HHQRCodeScanVC : UIViewController
 
 @property (nonatomic, copy) HHScanSuccessBlock completionBlock;

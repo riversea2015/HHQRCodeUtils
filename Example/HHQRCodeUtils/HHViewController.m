@@ -70,10 +70,18 @@
     
     switch (sender.tag) {
         case 2018062201:
-            [self.navigationController pushViewController:qrVC animated:YES];
+        {
+            NSLog(@"暂未实现");
+            return;
+//            [self.navigationController pushViewController:qrVC animated:YES];
+        }
             break;
         case 2018062202:
-            [self presentViewController:qrVC animated:YES completion:nil];
+        {
+            NSLog(@"暂未实现");
+            return;
+//            [self presentViewController:qrVC animated:YES completion:nil];
+        }
             break;
         case 2018062203:
             {
