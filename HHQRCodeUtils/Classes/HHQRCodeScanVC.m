@@ -13,7 +13,7 @@
 
 @interface HHShadowView ()
 
-@property (nonatomic, strong) UIImageView *lineView;
+@property (nonatomic, strong) UIImageView *scanLine;
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
@@ -27,10 +27,10 @@
     if (self) {
         
         self.backgroundColor = [UIColor clearColor];
-        // 图片下方附上
-        self.lineView  = [[UIImageView alloc] init];
-        self.lineView.image = [UIImage imageNamed:@"line"];
-        [self addSubview:self.lineView];
+
+        _scanLine  = [[UIImageView alloc] init];
+        _scanLine.image = [UIImage imageNamed:@"line"];
+        [self addSubview:_scanLine];
         
     }
     return self;
@@ -40,10 +40,10 @@
     
     [UIView animateWithDuration:2.4 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         
-        self.lineView .frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height + self.showSize.height) / 2, self.showSize.width, 2);
+        self.scanLine.frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height + self.showSize.height) / 2, self.showSize.width, 2);
         
     } completion:^(BOOL finished) {
-        self.lineView .frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height - self.showSize.height) / 2, self.showSize.width, 2);
+        self.scanLine .frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height - self.showSize.height) / 2, self.showSize.width, 2);
     }];
 }
 
@@ -57,7 +57,7 @@
     
     [super layoutSubviews];
     
-    self.lineView .frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height - self.showSize.height) / 2, self.showSize.width, 2);
+    self.scanLine.frame = CGRectMake((self.frame.size.width - self.showSize.width) / 2, (self.frame.size.height - self.showSize.height) / 2, self.showSize.width, 2);
     
     
     if (!_timer) {
@@ -81,15 +81,15 @@
     CGContextSetRGBFillColor(ctx, 0.15, 0.15, 0.15, 0.6);
     CGContextFillRect(ctx, rect);   //draw the transparent layer
     
-    //中间清空矩形框
+    // 中间清空矩形框
     CGRect clearDrawRect = CGRectMake((rect.size.width - self.showSize.width) / 2, (rect.size.height - self.showSize.height) / 2, self.showSize.width, self.showSize.height);
     CGContextClearRect(ctx, clearDrawRect);
     
-    //边框
+    // 边框
     CGContextStrokeRect(ctx, clearDrawRect);
-    CGContextSetRGBStrokeColor(ctx, 1, 1, 1, 1);  //颜色
-    CGContextSetLineWidth(ctx, 0.5);             //线宽
-    CGContextAddRect(ctx, clearDrawRect);       //矩形
+    CGContextSetRGBStrokeColor(ctx, 1, 1, 1, 1);    // 颜色
+    CGContextSetLineWidth(ctx, 0.5);                // 线宽
+    CGContextAddRect(ctx, clearDrawRect);           // 矩形
     CGContextStrokePath(ctx);
     
     [self addCornerLineWithContext:ctx rect:clearDrawRect];
